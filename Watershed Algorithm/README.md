@@ -15,7 +15,7 @@ This project explores the "topographical" approach of the Watershed transform, w
 
 ## 🚀 Key Features & Pipeline
 
-To prevent the common issue of over-segmentation in Watershed applications [cite: 742][cite_start], this project implements a rigorous pre-processing and marker-identification pipeline:
+To prevent the common issue of over-segmentation in Watershed applications , this project implements a rigorous pre-processing and marker-identification pipeline:
 
 1. **Pre-processing:**
    * Grayscale conversion and CLAHE (Contrast Limited Adaptive Histogram Equalization) for better detail definition.
