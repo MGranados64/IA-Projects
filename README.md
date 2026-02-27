@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./banner.jpg" alt="Starry Night Banner MGranados64" width="100%">
+  <img src="./Banner_4.jpg" alt="Starry Night Banner MGranados64" width="100%">
 </div>
 
 <h1 align="center">Welcome to my AI Projects Hub 🧠⚙️</h1>
-<h3 align="center">Miguel Granados | M.Sc. Artificial Intelligence Candidate & Automation Engineer</h3>
+<h3 align="center">Miguel Granados | M.Sc. Artificial Intelligence Student & Automation Engineer</h3>
 
 <p align="center">
   <a href="https://linkedin.com/in/miguel-granados-2a77ba199" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
