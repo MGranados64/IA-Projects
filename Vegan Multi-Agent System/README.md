@@ -8,32 +8,32 @@
   <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=000" alt="Hugging Face" />
 </p>
 
-## 🎯 Resumen del Proyecto
+## 🎯 Project Overview
 
-Este repositorio contiene una aplicación basada en **Inteligencia Artificial Agéntica (Multi-Agent System)** desarrollada con la librería `CrewAI` y desplegada con `Streamlit`. El sistema está diseñado para transformar cualquier platillo tradicional con carne en una alternativa vegana deliciosa y nutricionalmente balanceada, calculando además las porciones ideales basadas en la biometría del usuario.
+This repository contains an **Agentic Artificial Intelligence (Multi-Agent System)** application developed with `CrewAI` and deployed using `Streamlit`. The system is designed to transform any traditional meat-based dish into a delicious, nutritionally balanced vegan alternative, while also calculating the ideal portion sizes based on the user's specific biometrics.
 
-El "cerebro" detrás de estos agentes es el modelo **Llama-3.1-8b-instant**, ejecutado a través de la inferencia ultrarrápida de la API de **Groq**.
+The "brain" powering these agents is the **Llama-3.1-8b-instant** model, executed via the ultra-fast inference of the **Groq API**.
 
-🚀 **¡Pruébalo en vivo!** Este sistema de agentes está funcionando 24/7 en un espacio interactivo. Solo ingresa tu platillo favorito, tu altura, peso y nivel de actividad física para obtener un plan personalizado:  
-👉 **[Live Demo: CrewAgents Vegans en Hugging Face](https://huggingface.co/spaces/MGC1991MF/CREWAGENTS_VEGANS)**
+🚀 **Try it live!** This agentic system is running 24/7 in an interactive workspace. Simply input your favorite dish, height, weight, and physical activity level to get a personalized plan:  
+👉 **[Live Demo: CrewAgents Vegans on Hugging Face](https://huggingface.co/spaces/MGC1991MF/CREWAGENTS_VEGANS)**
 
-## 🤖 Arquitectura del Sistema Multi-Agente (CrewAI)
+## 🤖 Multi-Agent Architecture (CrewAI)
 
-El flujo de trabajo es orquestado por un equipo ("Crew") de cuatro agentes especializados, cada uno con un rol y objetivo definido que colaboran en secuencia:
+The workflow is orchestrated by a "Crew" of four specialized agents, each with a specific role and goal, collaborating in sequence:
 
-1. 🩺 **Agente Nutricionista:** Analiza el contenido calórico del platillo original y calcula las necesidades calóricas diarias del usuario (por ejemplo, estimando 2,512.50 cal/día para un perfil sedentario específico).
-2. 👨‍🍳 **Agente Chef Vegano:** Reemplaza ingredientes de origen animal. Por ejemplo, en una "Lasagna con carne de res", sustituye la carne por tempeh o tofu, y el queso parmesano por levadura nutricional (nutritional yeast).
-3. ⚖️ **Especialista en Porciones:** Dimensiona las cantidades exactas basadas en los cálculos del nutricionista para asegurar un balance energético (ej. 30g de carbohidratos, 25g de proteína y 20g de grasas por porción).
-4. 📋 **Coordinador del Plan:** Integra la salida de los tres agentes anteriores para redactar un reporte completo, añadiendo beneficios de la dieta vegana (como la reducción del riesgo de enfermedades crónicas) y sugiriendo acompañamientos.
+1. 🩺 **Nutritionist Agent:** Analyzes the caloric content of the original dish and calculates the user's daily caloric needs (e.g., estimating 2,512.50 cal/day for a specific sedentary profile).
+2. 👨‍🍳 **Vegan Chef Agent:** Replaces animal-based ingredients with plant-based alternatives. For example, in a "Beef Lasagna", it substitutes the beef with tempeh or tofu, and the parmesan cheese with nutritional yeast.
+3. ⚖️ **Portion Specialist:** Determines the exact ingredient quantities based on the nutritionist's calculations to ensure an optimal energy balance (e.g., structuring portions to hit 30g of carbohydrates, 25g of protein, and 20g of fats).
+4. 📋 **Plan Coordinator:** Integrates the output from the previous three agents to draft a comprehensive final report, adding the benefits of the vegan diet (such as reducing the risk of chronic diseases) and suggesting appropriate side dishes.
 
-## ⚙️ Características Técnicas
+## ⚙️ Technical Features
 
-* **Extracción Inteligente de Datos:** Uso avanzado de Expresiones Regulares (`re`) para analizar (parsear) la salida en texto natural de los LLMs y convertirla en métricas estructuradas y tablas.
-* **Exportación de Documentos:** Integración con la librería `FPDF` para compilar los resultados de los agentes y generar un reporte PDF descargable formateado profesionalmente.
-* **Cloud & Secrets Management:** Configuración segura de variables de entorno para la integración con la API de Groq en la nube de Hugging Face.
+* **Intelligent Data Extraction:** Advanced use of Regular Expressions (`re`) to parse natural language outputs from the LLMs and convert them into structured metrics and tables.
+* **Document Export:** Integration with the `FPDF` library to compile the agents' results and generate a professionally formatted, downloadable PDF report.
+* **Cloud & Secrets Management:** Secure configuration of environment variables for seamless integration with the Groq API on the Hugging Face cloud.
 
-## 💻 Cómo ejecutarlo localmente
+## 💻 How to Run Locally
 
-1. Clona este repositorio:
+1. Clone this repository:
    ```bash
    git clone [https://github.com/MGranados64/vegan-agentic-ai.git](https://github.com/MGranados64/vegan-agentic-ai.git)
