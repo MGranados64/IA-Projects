@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Banner_4.jpg" alt="Starry Night Banner MGranados64" width="100%">
+  <img src="./Banner_4.png" alt="NN Banner MGranados64" width="100%">
 </div>
 
 <h1 align="center">Welcome to my AI Projects Hub 🧠⚙️</h1>
